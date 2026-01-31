@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Správce Vendetty</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">Author: %1$s</string>
     <string name="cd_library_license">License: %1$s</string>
     <string name="msg_cleared_cache">Mezipaměť úspěšně vymazána</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">Načítání…</string>
     <string name="msg_downgrade">Nelze jít o verzi zpět. Nejdříve zkuste odinstalovat</string>
     <string name="msg_unlocked">Nyní jste vývojářem</string>
-    <string name="msg_permission_grant">Aby Správce Vendetty fungoval, jsou vyžadována oprávnění k přístupu k souborům. Protože jsou sdílená data uložena ve složce ~/Vendetta, je pro přístup k ní požadováno oprávnění.</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">Nepodařilo se získat oprávnění pro Shizuku</string>
     <string name="msg_change_mirror">Chcete to zkusit znovu pomocí zrcadla?</string>
     <string name="msg_invalid_apk">Soubor APK byl poškozen, zkuste vyčistit paměť cache a poté přeinstalovat</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">Obnovit</string>
     <string name="action_open_about">Otevřít O aplikaci</string>
     <string name="action_open_settings">Otevřít nastavení</string>
-    <string name="action_tap_to_install">Klepni pro nainstalování Vendetty pro Discord %1$s</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">Přesto ukončit</string>
     <string name="action_dismiss_nevermind">Zrušit</string>
     <string name="action_dismiss_no_thanks">Ne, díky</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">Povolit vlajku laditelné</string>
     <string name="settings_logs_alternate_lines">Alternate lines</string>
     <string name="settings_logs_line_wrap">Wrap lines</string>
-    <string name="update_description">Verze %1$s Správce Vendetty je nyní dostupná!</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">Stabilní</string>
     <string name="channel_beta">Beta</string>
     <string name="channel_alpha">Alpha</string>

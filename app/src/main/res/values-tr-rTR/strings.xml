@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Vendetta Manager</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">Yapan: %1$s</string>
     <string name="cd_library_license">Lisans: %1$s</string>
     <string name="msg_cleared_cache">Önbellek başarıyla temizlendi</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">Yükleniyor…</string>
     <string name="msg_downgrade">Sürüm düşürülemiyor, önce kaldırmayı deneyin</string>
     <string name="msg_unlocked">Artık bir geliştiricisiniz</string>
-    <string name="msg_permission_grant">Vendetta Manager\'ın düzgün çalışması için dosya izinleri gereklidir. Paylaşılan uygulama verileri ~/Vendetta\'da depolandığından, dosyalara erişim için izin gerekmektedir.</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">Shizuku izinleri alınamadı</string>
     <string name="msg_change_mirror">Alternatif bir kaynak kullanarak tekrar denemek ister misiniz?</string>
     <string name="msg_invalid_apk">APK bozuk. Önbelleği temizleyip yeniden yüklemeyi deneyin</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">Yenile</string>
     <string name="action_open_about">Hakkındayı aç</string>
     <string name="action_open_settings">Ayarları aç</string>
-    <string name="action_tap_to_install">Discord %1$s için Vendetta\'yı kurmak için dokunun</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">Yine de çık</string>
     <string name="action_dismiss_nevermind">Boş ver</string>
     <string name="action_dismiss_no_thanks">Hayır teşekkürler</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">Hata ayıklanabilir yap</string>
     <string name="settings_logs_alternate_lines">Satırları ayır</string>
     <string name="settings_logs_line_wrap">Satırları kaydır</string>
-    <string name="update_description">Vendetta Manager sürüm %1$s yayınlandı!</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">Kararlı</string>
     <string name="channel_beta">Beta</string>
     <string name="channel_alpha">Alfa</string>

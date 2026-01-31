@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Trình quản lý Vendetta</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">Author: %1$s</string>
     <string name="cd_library_license">License: %1$s</string>
     <string name="msg_cleared_cache">Đã xóa bộ nhớ đệm thành công</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">Đang tải…</string>
     <string name="msg_downgrade">Không thể hạ cấp, hãy thử gỡ cài đặt trước</string>
     <string name="msg_unlocked">Bạn hiện là nhà phát triển</string>
-    <string name="msg_permission_grant">Để Trình quản lý Vendetta hoạt động, bạn cần cấp quyền truy cập tệp. Do dữ liệu chia sẻ được lưu trữ trong ~/Vendetta, nên cần có quyền để truy cập dữ liệu đó.</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">Nhận quyền của Shizuku thất bại</string>
     <string name="msg_change_mirror">Bạn có muốn thử lại bằng cách sử dụng máy chủ tải xuống khác không?</string>
     <string name="msg_invalid_apk">APK bị hỏng, hãy thử xóa bộ nhớ đệm rồi cài đặt lại</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">Tải lại</string>
     <string name="action_open_about">Mở về</string>
     <string name="action_open_settings">Mở cài đặt</string>
-    <string name="action_tap_to_install">Nhấn để cài đặt Vendetta cho Discord %1$s</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">Vẫn thoát</string>
     <string name="action_dismiss_nevermind">Bỏ qua</string>
     <string name="action_dismiss_no_thanks">Không, cảm ơn</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">Bật tùy chọn gỡ lỗi</string>
     <string name="settings_logs_alternate_lines">Alternate lines</string>
     <string name="settings_logs_line_wrap">Wrap lines</string>
-    <string name="update_description">Trình quản lý Vendetta phiên bản %1$s đang khả dụng!</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">Ổn định</string>
     <string name="channel_beta">Beta</string>
     <string name="channel_alpha">Alpha</string>

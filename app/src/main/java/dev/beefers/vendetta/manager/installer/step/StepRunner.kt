@@ -13,12 +13,7 @@ import dev.beefers.vendetta.manager.installer.step.download.DownloadBaseStep
 import dev.beefers.vendetta.manager.installer.step.download.DownloadLangStep
 import dev.beefers.vendetta.manager.installer.step.download.DownloadLibsStep
 import dev.beefers.vendetta.manager.installer.step.download.DownloadResourcesStep
-import dev.beefers.vendetta.manager.installer.step.download.DownloadVendettaStep
 import dev.beefers.vendetta.manager.installer.step.installing.InstallStep
-import dev.beefers.vendetta.manager.installer.step.patching.AddVendettaStep
-import dev.beefers.vendetta.manager.installer.step.patching.PatchManifestsStep
-import dev.beefers.vendetta.manager.installer.step.patching.PresignApksStep
-import dev.beefers.vendetta.manager.installer.step.patching.ReplaceIconStep
 import dev.beefers.vendetta.manager.installer.util.LogEntry
 import dev.beefers.vendetta.manager.installer.util.Logger
 import dev.beefers.vendetta.manager.utils.DiscordVersion
@@ -44,14 +39,14 @@ class StepRunner(
     private val preferenceManager: PreferenceManager by inject()
     private val context: Context by inject()
     private val debugInfo = """
-            Vendetta Manager v${BuildConfig.VERSION_NAME}
+            Discord Manager v${BuildConfig.VERSION_NAME}
             Built from commit ${BuildConfig.GIT_COMMIT} on ${BuildConfig.GIT_BRANCH} ${if (BuildConfig.GIT_LOCAL_CHANGES || BuildConfig.GIT_LOCAL_COMMITS) "(Changes Present)" else ""}
             
             Running Android ${Build.VERSION.RELEASE}, API level ${Build.VERSION.SDK_INT}
             Supported ABIs: ${Build.SUPPORTED_ABIS.joinToString()}
             Device: ${Build.MANUFACTURER} - ${Build.MODEL} (${Build.DEVICE})
             ${if(Build.VERSION.SDK_INT > Build.VERSION_CODES.S) "SOC: ${Build.SOC_MANUFACTURER} ${Build.SOC_MODEL}\n" else "\n\n"} 
-            Adding Vendetta to Discord v$discordVersion
+            Installing Discord v$discordVersion
             
             
         """.trimIndent()
@@ -71,7 +66,7 @@ class StepRunner(
     private val cacheDir =
         context.externalCacheDir
         ?: File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_DOWNLOADS)
-            .resolve("VendettaManager")
+            .resolve("DiscordManager")
             .also { it.mkdirs() }
 
     /**
@@ -85,15 +80,6 @@ class StepRunner(
     private val patchedDir = discordCacheDir.resolve("patched").also { it.deleteRecursively() }
 
     /**
-     * Where apks are moved to once signed
-     */
-    private val signedDir = discordCacheDir.resolve("signed").also { it.deleteRecursively() }
-
-    /**
-     * Output directory for LSPatch
-     */
-    private val lspatchedDir = patchedDir.resolve("lspatched").also { it.deleteRecursively() }
-
     var currentStep by mutableStateOf<Step?>(null)
         private set
 
@@ -120,16 +106,9 @@ class StepRunner(
         add(DownloadLibsStep(discordCacheDir, patchedDir, discordVersion.toVersionCode()))
         add(DownloadLangStep(discordCacheDir, patchedDir, discordVersion.toVersionCode()))
         add(DownloadResourcesStep(discordCacheDir, patchedDir, discordVersion.toVersionCode()))
-        add(DownloadVendettaStep(patchedDir))
-
-        // Patching
-        if (preferenceManager.patchIcon) add(ReplaceIconStep())
-        add(PatchManifestsStep())
-        add(PresignApksStep(signedDir))
-        add(AddVendettaStep(signedDir, lspatchedDir))
 
         // Installing
-        add(InstallStep(lspatchedDir))
+        add(InstallStep(patchedDir))
     }.toImmutableList()
 
     /**

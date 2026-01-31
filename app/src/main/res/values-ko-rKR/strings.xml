@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Vendetta Manager</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">제작자: %1$s</string>
     <string name="cd_library_license">라이센스: %1$s</string>
     <string name="msg_cleared_cache">캐시를 비웠어요</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">불러오는 중…</string>
     <string name="msg_downgrade">다운그레이드하지 못했어요. 먼저 삭제해 보세요</string>
     <string name="msg_unlocked">개발자 모드가 활성화되었어요</string>
-    <string name="msg_permission_grant">Vendetta Manager가 정상적으로 작동하려면, 파일 권한을 부여해 주셔야 해요. 공유된 데이터가 ~/Vendetta에 저장되기 때문에, Manager가 작동하려면 권한이 필요해요.</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">Shizuku 권한을 얻지 못했어요.</string>
     <string name="msg_change_mirror">미러 버전을 다운로드해서 다시 시도할까요?</string>
     <string name="msg_invalid_apk">APK가 손상되었습니다. 캐시를 지운 후 다시 설치해 보세요.</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">새로고침</string>
     <string name="action_open_about">정보 보기</string>
     <string name="action_open_settings">설정 열기</string>
-    <string name="action_tap_to_install">Discord %1$s의 Vendetta를 설치하려면 누르세요</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">그래도 종료하기</string>
     <string name="action_dismiss_nevermind">괜찮아요</string>
     <string name="action_dismiss_no_thanks">괜찮아요</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">디버그 가능 플래그를 사용해요</string>
     <string name="settings_logs_alternate_lines">Alternate lines</string>
     <string name="settings_logs_line_wrap">Wrap lines</string>
-    <string name="update_description">지금 Vendetta Manager 버전 %1$s이 사용 가능해요!</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">안정화 버전</string>
     <string name="channel_beta">베타 버전</string>
     <string name="channel_alpha">알파 버전</string>
