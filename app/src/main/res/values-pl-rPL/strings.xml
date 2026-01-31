@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Menedżer Vendetta</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">Author: %1$s</string>
     <string name="cd_library_license">License: %1$s</string>
     <string name="msg_cleared_cache">Pamięć podręczna pomyślnie wyczyszczona</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">Ładowanie…</string>
     <string name="msg_downgrade">Nie można zainstalować starszej wersji, spróbuj najpierw odinstalować aktualnie zainstalowaną</string>
     <string name="msg_unlocked">Jesteś teraz deweloperem</string>
-    <string name="msg_permission_grant">Aby Menadżer Vendetta działał, wymagane są uprawnienia do plików. Ponieważ udostępnione dane są przechowywane w ~/Vendetta, dostęp do nich wymaga uprawnień.</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">Nie udało się uzyskać uprawnień Shizuku</string>
     <string name="msg_change_mirror">Czy chcesz spróbować ponownie, używając serwera lustrzanego pobierania?</string>
     <string name="msg_invalid_apk">Plik APK został uszkodzony, spróbuj wyczyścić pamięć podręczną i ponownie zainstalować Vendetta</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">Odśwież</string>
     <string name="action_open_about">Otwórz o aplikacji</string>
     <string name="action_open_settings">Otwórz ustawienia</string>
-    <string name="action_tap_to_install">Dotknij, aby zainstalować Vendetta dla Discorda %1$s</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">Wyjdź mimo to</string>
     <string name="action_dismiss_nevermind">Nieważne</string>
     <string name="action_dismiss_no_thanks">Nie, dziękuję</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">Włącz flagę debugowania</string>
     <string name="settings_logs_alternate_lines">Alternatywne linie</string>
     <string name="settings_logs_line_wrap">Zawijaj wiersze</string>
-    <string name="update_description">Menadżer Vendetta w wersji %1$s jest teraz dostępny!</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">Stabilna</string>
     <string name="channel_beta">Beta</string>
     <string name="channel_alpha">Alpha</string>

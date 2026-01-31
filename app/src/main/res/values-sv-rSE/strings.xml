@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Vendetta Hanteraren</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">Author: %1$s</string>
     <string name="cd_library_license">License: %1$s</string>
     <string name="msg_cleared_cache">Cachen har lyckats rensats</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">Laddar…</string>
     <string name="msg_downgrade">Kan inte nedgradera, försök att avinstallera först</string>
     <string name="msg_unlocked">Du är nu en utvecklare</string>
-    <string name="msg_permission_grant">För att Vendetta Hanteraren ska kunna fungera så krävs filbehörigheter. Eftersom delad data lagras i ~/Vendetta så krävs behörigheter för att komma åt den.</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">Misslyckades med att få Shizuku-behörigheter</string>
     <string name="msg_change_mirror">Vill du försöka igen med hjälp av en speglad nedladdning?</string>
     <string name="msg_invalid_apk">APK:n blev korrupterad, försök att rensa cachen och sedan ominstallera</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">Ladda om</string>
     <string name="action_open_about">Öppna \"om\"</string>
     <string name="action_open_settings">Öppna inställningar</string>
-    <string name="action_tap_to_install">Tryck för att installera Vendetta för Discord %1$s</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">Gå ut ändå</string>
     <string name="action_dismiss_nevermind">Glöm det</string>
     <string name="action_dismiss_no_thanks">Nej tack</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">Aktivera felsökbar flagga</string>
     <string name="settings_logs_alternate_lines">Alternate lines</string>
     <string name="settings_logs_line_wrap">Wrap lines</string>
-    <string name="update_description">Vendetta Manager version %1$s är nu tillgänglig!</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">Stabil</string>
     <string name="channel_beta">Beta</string>
     <string name="channel_alpha">Alpha</string>

@@ -14,11 +14,11 @@ class PreferenceManager(context: Context) :
     BasePreferenceManager(context.getSharedPreferences("prefs", Context.MODE_PRIVATE)) {
 
     val DEFAULT_MODULE_LOCATION =
-        (context.externalCacheDir ?: File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_DOWNLOADS).resolve("VendettaManager").also { it.mkdirs() }).resolve("vendetta.apk")
+        (context.externalCacheDir ?: File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_DOWNLOADS).resolve("DiscordManager").also { it.mkdirs() }).resolve("module.apk")
 
-    var packageName by stringPreference("package_name", "dev.beefers.vendetta")
+    var packageName by stringPreference("package_name", "com.discord")
 
-    var appName by stringPreference("app_name", "Vendetta")
+    var appName by stringPreference("app_name", "Discord")
 
     var discordVersion by stringPreference("discord_version", "")
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Vendetta Manager</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">Autor: %1$s</string>
     <string name="cd_library_license">Licença: %1$s</string>
     <string name="msg_cleared_cache">Cache limpo com êxito</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">Carregando…</string>
     <string name="msg_downgrade">Não é possível desatualizar, tente desinstalar primeiro</string>
     <string name="msg_unlocked">Você agora é um desenvolvedor</string>
-    <string name="msg_permission_grant">Para o Gerenciador do Vendetta funcionar corretamente, você precisa conceder as permissões de arquivos. Como os dados compartilhados são armazenados em ~/Vendetta, as permissões são necessárias para acessa-los.</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">Falha ao obter permissões Shizuku</string>
     <string name="msg_change_mirror">Gostaria de tentar novamente usando uma forma alternativa de download?</string>
     <string name="msg_invalid_apk">O APK estava corrompido, tente limpar o cache e reinstale-o</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">Recarregar</string>
     <string name="action_open_about">Abrir sobre</string>
     <string name="action_open_settings">Abrir as configurações</string>
-    <string name="action_tap_to_install">Toque para instalar o Vendetta para o Discord %1$s</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">Sair de qualquer jeito</string>
     <string name="action_dismiss_nevermind">Deixa para lá</string>
     <string name="action_dismiss_no_thanks">Não, obrigado</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">Habilitar modo de depuração</string>
     <string name="settings_logs_alternate_lines">Linhas alternativas</string>
     <string name="settings_logs_line_wrap">Quebra automática de linha</string>
-    <string name="update_description">A versão %1$s do Vendetta Manager já está disponível!</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">Estável</string>
     <string name="channel_beta">Beta</string>
     <string name="channel_alpha">Alfa</string>
