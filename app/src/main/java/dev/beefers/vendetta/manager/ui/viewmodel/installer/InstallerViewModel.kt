@@ -38,6 +38,7 @@ class InstallerViewModel(
         .associateWith { group ->
             runner.steps.filter { step -> step.group == group }
         }
+        .filterValues { it.isNotEmpty() }
         .toImmutableMap()
 
     private val tempLogStorageDir = context.filesDir.resolve("logsTmp").also {
@@ -92,7 +93,7 @@ class InstallerViewModel(
         expandedGroup = group
     }
 
-    fun launchVendetta() {
+    fun launchDiscord() {
         installManager.current?.let {
             val intent = context.packageManager.getLaunchIntentForPackage(it.packageName)?.apply {
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

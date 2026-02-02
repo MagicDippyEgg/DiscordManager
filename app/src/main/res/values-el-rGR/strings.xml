@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Vendetta Manager</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">Author: %1$s</string>
     <string name="cd_library_license">License: %1$s</string>
     <string name="msg_cleared_cache">Επιτυχής εκκαθάριση προσωρινής μνήμης</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">Φόρτωση…</string>
     <string name="msg_downgrade">Αδυναμία υποβάθμισης, δοκιμάστε πρώτα την απεγκατάσταση</string>
     <string name="msg_unlocked">Είστε πλέον προγραμματιστής</string>
-    <string name="msg_permission_grant">Για να λειτουργήσει ο Vendetta Manager, απαιτούνται δικαιώματα αρχείων. Δεδομένου ότι τα κοινόχρηστα δεδομένα αποθηκεύονται στο ~/Vendetta, απαιτούνται δικαιώματα πρόσβασης σε αυτά.</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">Failed to obtain Shizuku permissions</string>
     <string name="msg_change_mirror">Θα θέλατε να δοκιμάσετε ξανά χρησιμοποιώντας έναν καθρέφτη λήψης;</string>
     <string name="msg_invalid_apk">Το APK ήταν κατεστραμμένο, προσπαθήστε να καθαρίσετε την προσωρινή μνήμη και έπειτα να επανεγκαταστήσετε</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">Ανανέωση</string>
     <string name="action_open_about">Άνοιγμα σχετικά με</string>
     <string name="action_open_settings">Άνοιγμα ρυθμίσεων</string>
-    <string name="action_tap_to_install">Πατήστε για να εγκαταστήσετε το Vendetta για το Discord %1$s</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">Έξοδος ούτως ή άλλως</string>
     <string name="action_dismiss_nevermind">Δεν πειράζει</string>
     <string name="action_dismiss_no_thanks">Όχι, ευχαριστώ</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">Ενεργοποίηση σημαίας αποσφαλμάτωσης</string>
     <string name="settings_logs_alternate_lines">Alternate lines</string>
     <string name="settings_logs_line_wrap">Wrap lines</string>
-    <string name="update_description">Η έκδοση %1$s του Vendetta Manager είναι τώρα διαθέσιμη!</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">Σταθερή</string>
     <string name="channel_beta">Δοκιμαστική</string>
     <string name="channel_alpha">Alpha</string>

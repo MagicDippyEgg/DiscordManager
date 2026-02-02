@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Vendetta Bestuurder</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">Author: %1$s</string>
     <string name="cd_library_license">License: %1$s</string>
     <string name="msg_cleared_cache">Kas is suksesvol skoongemaak</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">Laai tans…</string>
     <string name="msg_downgrade">Kan nie afgradeer nie, probeer eers deïnstalleer</string>
     <string name="msg_unlocked">Jy is nou \'n ontwikkelaar</string>
-    <string name="msg_permission_grant">Vir Vendetta Bestuurder om te funksioneer, word lêertoestemmings vereis. Aangesien gedeelde data in ~/Vendetta gestoor word, word toestemmings vereis om toegang daartoe te verkry.</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">Failed to obtain Shizuku permissions</string>
     <string name="msg_change_mirror">Wil jy weer probeer met \'n aflaaispieël?</string>
     <string name="msg_invalid_apk">APK is korrupteer, probeer om kas skoon te maak en dan weer te installeer</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">Herlaai</string>
     <string name="action_open_about">Maak oop oor</string>
     <string name="action_open_settings">Maak instellings oop</string>
-    <string name="action_tap_to_install">Tik om Vendetta vir Discord %1$s te installeer</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">Verlaat in elk geval</string>
     <string name="action_dismiss_nevermind">Toemaar</string>
     <string name="action_dismiss_no_thanks">Nee dankie</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">Aktiveer ontfoutbare vlag</string>
     <string name="settings_logs_alternate_lines">Alternate lines</string>
     <string name="settings_logs_line_wrap">Wrap lines</string>
-    <string name="update_description">Vendetta Bestuurder weergawe %1$s is nou beskikbaar!</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">Stabiel</string>
     <string name="channel_beta">Beta</string>
     <string name="channel_alpha">Alfa</string>

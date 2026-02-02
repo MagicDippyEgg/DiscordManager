@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Vendetta 管理器</string>
+    <string name="app_name">Discord Manager</string>
     <string name="cd_library_author">作者：%1$s</string>
     <string name="cd_library_license">许可证：%1$s</string>
     <string name="msg_cleared_cache">缓存清除成功</string>
@@ -13,7 +13,7 @@
     <string name="msg_loading">载入中…</string>
     <string name="msg_downgrade">无法降级，请先尝试卸载</string>
     <string name="msg_unlocked">您现在已成为开发者</string>
-    <string name="msg_permission_grant">为了使 Vendetta Manager 正常运作，您需要授予「管理所有文件」权限。由于数据存储在 ~/Vendetta 中，因此需要权限才能读取它。</string>
+    <string name="msg_permission_grant">In order for Discord Manager to function, file permissions are required. Since downloaded files are stored in Downloads/DiscordManager, permissions are required in order to access them.</string>
     <string name="msg_shizuku_denied">无法获取Shizuku权限</string>
     <string name="msg_change_mirror">您想使用下载镜像再试一次吗？</string>
     <string name="msg_invalid_apk">APK已损坏，请尝试清除缓存后再重新安装</string>
@@ -64,7 +64,7 @@
     <string name="action_reload">刷新</string>
     <string name="action_open_about">打开关于</string>
     <string name="action_open_settings">打开设置</string>
-    <string name="action_tap_to_install">点击为 Discord 安装 Vendetta Manager %1$s</string>
+    <string name="action_tap_to_install">Tap to install Discord %1$s</string>
     <string name="action_confirm_exit">坚持推出</string>
     <string name="action_dismiss_nevermind">没关系</string>
     <string name="action_dismiss_no_thanks">残忍拒绝</string>
@@ -130,7 +130,7 @@
     <string name="settings_debuggable_description">启用调试标志</string>
     <string name="settings_logs_alternate_lines">备用路线</string>
     <string name="settings_logs_line_wrap">Wrap路线</string>
-    <string name="update_description">Vendetta Manager 版本 %1$s 已可供使用！</string>
+    <string name="update_description">Discord Manager version %1$s is now available!</string>
     <string name="channel_stable">稳定版</string>
     <string name="channel_beta">测试版</string>
     <string name="channel_alpha">早期开发版</string>

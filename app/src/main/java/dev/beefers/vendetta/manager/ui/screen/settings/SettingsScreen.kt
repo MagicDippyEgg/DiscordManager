@@ -11,7 +11,6 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.outlined.AutoAwesome
 import androidx.compose.material.icons.outlined.Code
 import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material.icons.outlined.Palette
@@ -64,13 +63,6 @@ class SettingsScreen : Screen {
                     text = stringResource(R.string.settings_appearance),
                     subtext = stringResource(R.string.settings_appearance_description),
                     destination = ::AppearanceSettings
-                )
-
-                SettingsCategory(
-                    icon = Icons.Outlined.AutoAwesome,
-                    text = stringResource(R.string.settings_customization),
-                    subtext = stringResource(R.string.settings_customization_description),
-                    destination = ::CustomizationSettings
                 )
 
                 SettingsCategory(

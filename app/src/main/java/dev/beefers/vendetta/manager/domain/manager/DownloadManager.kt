@@ -21,13 +21,6 @@ class DownloadManager(
     suspend fun downloadSplit(version: String, split: String, out: File, onProgressUpdate: (Float?) -> Unit): DownloadResult =
         download("${prefs.mirror.baseUrl}/tracker/download/$version/$split", out, onProgressUpdate)
 
-    suspend fun downloadVendetta(out: File, onProgressUpdate: (Float?) -> Unit) =
-        download(
-            "https://github.com/vendetta-mod/VendettaXposed/releases/latest/download/app-release.apk",
-            out,
-            onProgressUpdate
-        )
-
     suspend fun downloadUpdate(out: File) =
         download(
             "https://github.com/vendetta-mod/VendettaManager/releases/latest/download/Manager.apk",
@@ -54,7 +47,7 @@ class DownloadManager(
             ?: throw IllegalStateException("DownloadManager service is not available")
 
         val downloadId = DownloadManager.Request(Uri.parse(url))
-            .setTitle("Vendetta Manager")
+            .setTitle("Discord Manager")
             .setDescription("Downloading ${out.name}...")
             .setDestinationUri(Uri.fromFile(out))
             .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE)

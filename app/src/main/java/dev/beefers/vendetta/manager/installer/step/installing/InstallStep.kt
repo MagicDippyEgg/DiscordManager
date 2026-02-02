@@ -20,10 +20,10 @@ import java.io.File
  * @see SessionInstaller
  * @see ShizukuInstaller
  *
- * @param lspatchedDir Where all the patched APKs are
+ * @param sourceDir Where the APKs to install are stored
  */
 class InstallStep(
-    private val lspatchedDir: File
+    private val sourceDir: File
 ): Step() {
 
     private val preferences: PreferenceManager by inject()
@@ -33,10 +33,10 @@ class InstallStep(
     override val nameRes = R.string.step_installing
 
     override suspend fun run(runner: StepRunner) {
-        runner.logger.i("Installing apks")
-        val files = lspatchedDir.listFiles()
+        runner.logger.i("Installing Discord APKs")
+        val files = sourceDir.listFiles()
             ?.takeIf { it.isNotEmpty() }
-            ?: throw Error("Missing APKs from LSPatch step; failure likely")
+            ?: throw Error("Missing APKs to install")
 
         val installer: Installer = when (preferences.installMethod) {
             InstallMethod.DEFAULT -> SessionInstaller(context)

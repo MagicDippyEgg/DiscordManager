@@ -25,7 +25,6 @@ import dev.beefers.vendetta.manager.installer.shizuku.ShizukuInstaller
 import dev.beefers.vendetta.manager.network.dto.Release
 import dev.beefers.vendetta.manager.network.utils.CommitsPagingSource
 import dev.beefers.vendetta.manager.network.utils.dataOrNull
-import dev.beefers.vendetta.manager.network.utils.ifSuccessful
 import dev.beefers.vendetta.manager.utils.DiscordVersion
 import dev.beefers.vendetta.manager.utils.isMiui
 import kotlinx.coroutines.launch
@@ -42,7 +41,7 @@ class HomeViewModel(
     private val cacheDir = context.externalCacheDir ?: File(
         Environment.getExternalStorageDirectory(),
         Environment.DIRECTORY_DOWNLOADS
-    ).resolve("VendettaManager").also { it.mkdirs() }
+    ).resolve("DiscordManager").also { it.mkdirs() }
 
     var discordVersions by mutableStateOf<Map<DiscordVersion.Type, DiscordVersion?>?>(null)
         private set
@@ -66,7 +65,7 @@ class HomeViewModel(
         }
     }
 
-    fun launchVendetta() {
+    fun launchDiscord() {
         installManager.current?.let {
             val intent = context.packageManager.getLaunchIntentForPackage(it.packageName)?.apply {
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -75,11 +74,11 @@ class HomeViewModel(
         }
     }
 
-    fun uninstallVendetta() {
+    fun uninstallDiscord() {
         installManager.uninstall()
     }
 
-    fun launchVendettaInfo() {
+    fun launchDiscordInfo() {
         installManager.current?.let {
             Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -110,13 +109,6 @@ class HomeViewModel(
             release = repo.getLatestRelease("VendettaManager").dataOrNull
             release?.let {
                 showUpdateDialog = it.tagName.toInt() > BuildConfig.VERSION_CODE
-            }
-            repo.getLatestRelease("VendettaXposed").ifSuccessful {
-                if (prefs.moduleVersion != it.tagName) {
-                    prefs.moduleVersion = it.tagName
-                    val module = File(cacheDir, "vendetta.apk")
-                    if (module.exists()) module.delete()
-                }
             }
         }
     }
