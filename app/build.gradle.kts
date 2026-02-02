@@ -12,6 +12,30 @@ android {
     namespace = "dev.beefers.vendetta.manager"
     compileSdk = 34
 
+    val releaseStoreFile = (findProperty("RELEASE_STORE_FILE") as String?)
+        ?: System.getenv("RELEASE_STORE_FILE")
+    val releaseStorePassword = (findProperty("RELEASE_STORE_PASSWORD") as String?)
+        ?: System.getenv("RELEASE_STORE_PASSWORD")
+    val releaseKeyAlias = (findProperty("RELEASE_KEY_ALIAS") as String?)
+        ?: System.getenv("RELEASE_KEY_ALIAS")
+    val releaseKeyPassword = (findProperty("RELEASE_KEY_PASSWORD") as String?)
+        ?: System.getenv("RELEASE_KEY_PASSWORD")
+    val hasReleaseSigning = !releaseStoreFile.isNullOrBlank() &&
+        !releaseStorePassword.isNullOrBlank() &&
+        !releaseKeyAlias.isNullOrBlank() &&
+        !releaseKeyPassword.isNullOrBlank()
+
+    signingConfigs {
+        if (hasReleaseSigning) {
+            create("release") {
+                storeFile = file(releaseStoreFile!!)
+                storePassword = releaseStorePassword
+                keyAlias = releaseKeyAlias
+                keyPassword = releaseKeyPassword
+            }
+        }
+    }
+
     defaultConfig {
         applicationId = "dev.beefers.vendetta.manager"
         minSdk = 28
@@ -35,6 +59,11 @@ android {
             isCrunchPngs = true
             isMinifyEnabled = true
             isShrinkResources = true
+            signingConfig = if (hasReleaseSigning) {
+                signingConfigs.getByName("release")
+            } else {
+                signingConfigs.getByName("debug")
+            }
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
