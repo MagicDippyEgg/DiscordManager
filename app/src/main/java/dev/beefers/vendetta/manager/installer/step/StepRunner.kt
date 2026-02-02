@@ -80,6 +80,8 @@ class StepRunner(
     private val patchedDir = discordCacheDir.resolve("patched").also { it.deleteRecursively() }
 
     /**
+     * Current step being executed.
+     */
     var currentStep by mutableStateOf<Step?>(null)
         private set
 
